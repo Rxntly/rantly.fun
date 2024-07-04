@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="css4agecounter.css">
+  <script type="text/javascript">
+    function zoom() {
+       document.body.style.zoom = "77.5%" 
+    }
+ </script>
+</head>
+<body>
+
+  
+  <div id="input-form">
+    <h1 class="agecalctitle">Age Calculator</h1>
+    <p id="error-message" style="display: none;">Invalid, try again.</p>
+
+    <input type="date" id="birthday">
+    <button onclick="calculateAge()" style="white-space: nowrap; text-align: center; width: 150px; height: 40px; margin-top: 20px; border-radius: 5px;" >
+      <span style="display: inline-block;">Calculate Age</span>
+    </button>
+    
+  </div>
+
+
+  <div id="counter"></div>
+
+  <script>
+    // Get the user's birthday
+    var birthday = document.getElementById("birthday");
+
+    // Calculate the user's age in seconds
+    function calculateAge() {
+      var now = new Date();
+
+      // Check if the birthday is higher than the current date
+      if (birthday.value > 0) {
+        // Display the error message
+        document.getElementById("error-message").style.display = "block";
+        return;
+      }
+
+      // Convert the user's birthday string to a Date object
+      var birthdayDate = new Date(Date.parse(birthday.value));
+
+      // Calculate the user's age in seconds
+      var age = (now - birthdayDate) / 1000;
+
+      // Convert the user's age in seconds to years
+      var ageInYears = age / 31536000;
+
+      // Display the user's age in years with 9 decimal places
+      document.getElementById("counter").innerHTML = ageInYears.toFixed(9);
+
+     
+      document.getElementById("input-form").style.display = "none";
+      document.getElementById("counter").style.display = "block";
+
+      setInterval(calculateAge, 10);
+    }
+  </script>
+
+<div class="button-container">
+  <a href="/index.html"><button class="aboutme">
+      Go back
+  </button></a>
+</div>
+
+</body>
+</html>

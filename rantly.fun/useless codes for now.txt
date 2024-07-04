@@ -1,0 +1,12 @@
+.mainlogo{
+   font-family: 'Gluten', cursive;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   color: black;
+   font-size: 45px;
+   line-height: 0.1;
+   transform: scaleY(1.1); 
+}

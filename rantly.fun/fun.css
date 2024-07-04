@@ -1,0 +1,201 @@
+/* Default styles for larger screens */
+body {
+   background-color: white;
+   overflow-x: hidden;
+   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+   background-position: center;
+   background-repeat: repeat;
+   background-size: 4%;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   height: 100vh;
+}
+
+.container {
+   text-align: center;
+   padding: 20px;
+   position: relative;
+}
+
+.mainl {
+   width: 300px;
+   height: auto;
+   text-align: right;
+   margin-top: 45px;
+   margin-bottom: 0px;
+   position: relative;
+}
+
+.mainl:hover {
+   transform: scale(1.2);
+   transition: transform 0.5s ease-in-out;
+}
+
+.mainl:not(:hover) {
+   transform: scale(1);
+   transition: transform 0.5s ease;
+}
+
+.undermainlogo {
+   font-size: 18px;
+   opacity: 0.75;
+}
+
+.search-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.searchbar {
+   padding: 8px;
+   border: 1px solid black;
+   border-radius: 5px;
+   outline: none;
+   font-size: 12px;
+   margin-right: 2px;
+   width: 90px;
+   height: 10px;
+}
+
+.search-button {
+   background-color: #007bff;
+   border: 1px solid black;
+   color: #fff;
+   padding: 6px;
+   font-size: 12px;
+   border-radius: 5px;
+   cursor: pointer;
+   outline: none;
+   transition: background-color 0.2s;
+}
+
+.search-button:hover {
+   background-color: #0056b3;
+}
+
+/* Define styles for the image container */
+.image-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   margin: 20px; /* Add margin to separate rows */
+}
+
+/* Define styles for the individual images */
+.agecalculator,
+.higherorlower,
+.comingsoon,
+.image4 {
+   width: 400px;
+   height: 135px;
+   border-radius: 15px;
+   border: 2px solid black;
+   margin: 0px 30px 20px 0; /* Add margin between images and below each image */
+   position: relative;
+}
+.agecalculator:hover,
+.higherorlower:hover,
+.comingsoon:hover,
+.image4:hover {
+   transform: scale(1.05);
+   transition: transform 0.2s ease-in-out;
+}
+
+/* Style for a single image within a row */
+.image-row {
+   display: flex;
+   justify-content: flex-start; /* Align images to the left within the row */
+}
+
+.footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: transparent;
+   color: black;
+   font-family: RobotoCondensedLight, sans-serif;
+   text-align: center;
+   padding: 20px;
+   opacity: 0.75;
+   z-index: 999; /* its 999 to ensure its the lowest thing on the site no matter what*/ 
+}
+
+.footer-text {
+   margin-top: 10px;
+   font-size: 21px;
+   text-align: center;
+   padding: 5px 10px 5px;
+   margin-bottom: 1px;
+}
+.coffee,
+.youtube,
+.steam,
+.donation,
+.twitter {
+   border-radius: 20px;
+   cursor: pointer;
+   background-color: transparent;
+   border: 2px solid black;
+   color: black;
+   font-size: 20px;
+   text-align: center;
+   padding: 6px 10px 6px;
+   margin-right: 10px;
+   margin-bottom: 0px;
+   margin-top: 0px;
+   font-family: gluten;
+}
+
+.footer-text {
+   font-family: RobotoCondensedLight, sans-serif;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: center;
+}
+
+.button-container {
+   position: fixed;
+   top: 35px;
+   right: 55px;
+}
+
+.aboutme {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight: bold;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.aboutme:hover {
+    background-color: #000;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.aboutme:active {
+    transform: scale(0.95);
+}
+
+
+
+@media (max-width: 600px) {
+   .container {
+       padding: 10px; /* Adjust the padding for smaller screens */
+   }
+
+   .undermainlogo {
+       font-size: 16px; /* Adjust the font size for smaller screens */
+   }
+}

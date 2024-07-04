@@ -1,0 +1,65 @@
+.containerforaboutme {
+   position: fixed;
+   top: 30px;
+   left: 30px;
+}
+
+.gobacklogo {
+   width: 260px;
+   height: auto;
+}
+
+.head{
+   margin-bottom: 80px;
+   font-size: 40px;
+}
+
+.containerfortext {
+   background-color: #fff;
+   padding: 20px;
+   text-align: center;
+   box-shadow: -30px 30px  rgb(0, 0, 0, 0.3); /* Adjust the offsets and blur radius */
+   width: 1200px; 
+   height: 500px; 
+   margin: 50px auto; 
+   overflow: hidden; 
+   font-family: 'Gluten', cursive;
+   font-family: 'Roboto Mono', monospace;
+}
+
+
+.text {
+   max-width: 75%; 
+   font-size: 30px;  
+   margin: 0% auto; 
+   word-wrap: break-word; 
+   font-family: 'Gluten', cursive;
+   font-family: 'Roboto Mono', monospace;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   background-color: #f0f0f0;
+}
+@media (max-width: 768px) {
+   .head {
+     font-size: 18px;
+   }
+ .gobacklogo{
+   margin-bottom: 6px;
+ }
+   .text {
+     font-size: 20px;
+   }
+ 
+   .containerfortext {
+     width: 75%;
+     margin-bottom: 6px;}
+   
+ }
